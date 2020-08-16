@@ -10,7 +10,7 @@ body {
 
 header,
 footer,
-aside,
+side-bar,
 main,
 article,
 span {
@@ -53,24 +53,24 @@ header {
   overflow: hidden;
 }
 
-aside {
+side-bar {
   grid-column: 1/2;
   grid-row: 2/3;
   background-color: rgba(255, 255, 255, 0.11);
 }
 
-aside a {
+side-bar a {
   display: block;
   color: rgb(116, 116, 116);
   padding: 16px;
   text-decoration: none;
 }
 
-aside a.active {
+side-bar a.active {
   color: white;
 }
 
-aside a:hover:not(.active) {
+side-bar a:hover:not(.active) {
   color: white;
 }
 
@@ -114,17 +114,12 @@ main a {
   padding-top: 35px;
   margin: 0 10px;
   text-align: center;
-  font-size: 1.5vw;
   border-radius: 15px;
 }
 
 .images {
   width: 100%;
   height: auto;
-}
-
-.image p {
-  font-size: 2vw;
 }
 
 .c {
@@ -154,14 +149,9 @@ p {
   padding: 5px;
 }
 
-h1 {
-  text-align: center;
-  font-size: 2vw;
-}
-
+h1,
 h6 {
   text-align: center;
-  font-size: 1vw;
 }
 
 footer {
@@ -177,7 +167,7 @@ footer {
     flex-direction: column;
   }
 
-  aside {
+  side-bar {
     order: 1;
   }
 

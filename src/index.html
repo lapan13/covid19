@@ -1,127 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>COVID-19</title>
-  </head>
 
-  <body>
-    <div class="grid-wrapper">
-      <header>CORONA CASES</header>
-      <div class="body">
-        <aside id="sidebar">
-          <a class="navigation active" href="#home">Home</a>
-          <a class="navigation" href="#about">About</a>
-          <a class="navigation" href="#symp">Symptoms</a>
-          <a class="navigation" href="#prec">Precautions</a>
-        </aside>
-        <main>
-          <section class="section" id="home">
-            <article id="global">
-              <h1>Global Result</h1>
-              <div class="flex-wrapper" id="global-result"></div>
-              <div id="last-update-global"></div>
-            </article>
-            <article id="country">
-              <h1>Country Result</h1>
-              <form>
-                <label>Choose a Country:</label>
-                <select id="country-list" name="country">
-                  <option value="null">Choose a Country</option>
-                </select>
-              </form>
-              <div class="flex-wrapper" id="country-result"></div>
-              <div id="last-update-country"></div>
-            </article>
-          </section>
-          <section class="section" id="about">
-            <h1>About</h1>
-            <article>
-              <p>What is Novel Coronavirus?</p>
-              <blockquote
-                cite="https://www.unicef.org/indonesia/coronavirus/FAQ"
-              >
-                A novel coronavirus (CoV) is a new strain of coronavirus. The
-                disease caused by the novel coronavirus first identified in
-                Wuhan, China, has been named coronavirus disease 2019 (COVID-19)
-                – ‘CO’ stands for corona, ‘VI’ for virus, and ‘D’ for disease.
-                Formerly, this disease was referred to as ‘2019 novel
-                coronavirus’ or ‘2019-nCoV.’ The COVID-19 virus is a new virus
-                linked to the same family of viruses as Severe Acute Respiratory
-                Syndrome (SARS) and some types of common cold.
-                <span
-                  ><a href="https://www.unicef.org/indonesia/coronavirus/FAQ"
-                    >(www.unicef.org)</a
-                  ></span
-                >
-              </blockquote>
-            </article>
-          </section>
-          <section class="section" id="symp">
-            <h1>Symptoms</h1>
-            <article>
-              <p>Symptoms can include:</p>
-              <img src="symptoms.jpg" class="images" />
-              <br />
-              <a href="https://www.freepik.com/vectors/woman"
-                >Woman vector created by studiogstock - www.freepik.com</a
-              >
-              <p>
-                In more severe cases, infection can cause pneumonia or breathing
-                difficulties. More rarely, the disease can be fatal. These
-                symptoms are similar to the flu (influenza) or the common cold,
-                which are a lot more common than novel coronavirus. This is why
-                testing is required to confirm if someone has novel coronavirus.
-                It’s important to remember that key prevention measures are the
-                same – frequent hand washing, and respiratory hygiene (cover
-                your cough or sneeze with a flexed elbow or tissue, then throw
-                away the tissue into a closed bin). Also, there is a vaccine for
-                the flu – so remember to keep yourself and your child up to date
-                with vaccinations.
-              </p>
-            </article>
-          </section>
-          <section class="section" id="prec">
-            <h1>Precautions</h1>
-            <article>
-              <p>
-                Here are four precautions you and your family can take to avoid
-                infection:
-              </p>
-              <img src="precautions.jpg" class="images" />
-              <br />
-              <a href="https://www.freepik.com/vectors/social-media"
-                >Social media vector created by freepik - www.freepik.com</a
-              >
-              <ul>
-                <li>
-                  Wash your hands frequently using soap and water or an
-                  alcohol-based hand rub
-                </li>
-                <li>
-                  Cover mouth and nose with flexed elbow or tissue when coughing
-                  or sneezing. Dispose of used tissue immediately
-                </li>
-                <li>
-                  Avoid close contact with anyone who has cold or flu-like
-                  symptoms
-                </li>
-                <li>
-                  Seek medical care early if you or your child has a fever,
-                  cough or difficulty breathing
-                </li>
-              </ul>
-            </article>
-          </section>
-        </main>
-      </div>
-      <footer>
-        API Source :
-        <a href="https://github.com/mathdroid/covid-19-api"
-          >https://github.com/mathdroid/covid-19-api</a
-        >
-      </footer>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>COVID-19</title>
+</head>
+
+<body>
+  <div class="grid-wrapper">
+    <header>CORONA CASES</header>
+    <div class="body">
+      <side-bar></side-bar>
+      <main class="content">
+        <section class="section" id="home">
+          <article id="global">
+            <h1>Global Result</h1>
+            <div class="flex-wrapper" id="global-result"></div>
+            <div id="last-update-global"></div>
+          </article>
+          <article id="country">
+            <h1>Country Result</h1>
+            <form>
+              <label>Choose a Country:</label>
+              <select id="country-list" name="country">
+                <option value="null">Choose a Country</option>
+              </select>
+            </form>
+            <div class="flex-wrapper" id="country-result"></div>
+            <div id="last-update-country"></div>
+          </article>
+        </section>
+        <section class="section" id="about">
+          <h1>About</h1>
+          <article>
+            <p>What is Novel Coronavirus?</p>
+            <blockquote cite="https://www.unicef.org/indonesia/coronavirus/FAQ">
+              A novel coronavirus (CoV) is a new strain of coronavirus. The
+              disease caused by the novel coronavirus first identified in
+              Wuhan, China, has been named coronavirus disease 2019 (COVID-19)
+              – ‘CO’ stands for corona, ‘VI’ for virus, and ‘D’ for disease.
+              Formerly, this disease was referred to as ‘2019 novel
+              coronavirus’ or ‘2019-nCoV.’ The COVID-19 virus is a new virus
+              linked to the same family of viruses as Severe Acute Respiratory
+              Syndrome (SARS) and some types of common cold.
+              <span><a href="https://www.unicef.org/indonesia/coronavirus/FAQ">(www.unicef.org)</a></span>
+            </blockquote>
+          </article>
+        </section>
+        <section class="section" id="symp">
+          <h1>Symptoms</h1>
+          <article>
+            <p>Symptoms can include:</p>
+            <img src="symptoms.jpg" class="images" />
+            <br />
+            <a href="https://www.freepik.com/vectors/woman">Woman vector created by studiogstock - www.freepik.com</a>
+            <p>
+              In more severe cases, infection can cause pneumonia or breathing
+              difficulties. More rarely, the disease can be fatal. These
+              symptoms are similar to the flu (influenza) or the common cold,
+              which are a lot more common than novel coronavirus. This is why
+              testing is required to confirm if someone has novel coronavirus.
+              It’s important to remember that key prevention measures are the
+              same – frequent hand washing, and respiratory hygiene (cover
+              your cough or sneeze with a flexed elbow or tissue, then throw
+              away the tissue into a closed bin). Also, there is a vaccine for
+              the flu – so remember to keep yourself and your child up to date
+              with vaccinations.
+            </p>
+          </article>
+        </section>
+        <section class="section" id="prec">
+          <h1>Precautions</h1>
+          <article>
+            <p>
+              Here are four precautions you and your family can take to avoid
+              infection:
+            </p>
+            <img src="precautions.jpg" class="images" />
+            <br />
+            <a href="https://www.freepik.com/vectors/social-media">Social media vector created by freepik -
+              www.freepik.com</a>
+            <ul>
+              <li>
+                Wash your hands frequently using soap and water or an
+                alcohol-based hand rub
+              </li>
+              <li>
+                Cover mouth and nose with flexed elbow or tissue when coughing
+                or sneezing. Dispose of used tissue immediately
+              </li>
+              <li>
+                Avoid close contact with anyone who has cold or flu-like
+                symptoms
+              </li>
+              <li>
+                Seek medical care early if you or your child has a fever,
+                cough or difficulty breathing
+              </li>
+            </ul>
+          </article>
+        </section>
+      </main>
     </div>
-  </body>
+    <footer>
+      API Source :
+      <a href="https://github.com/mathdroid/covid-19-api">https://github.com/mathdroid/covid-19-api</a>
+    </footer>
+  </div>
+</body>
+
 </html>
