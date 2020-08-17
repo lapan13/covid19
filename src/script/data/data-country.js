@@ -33,14 +33,14 @@ function countryChoosen() {
                     let treated = result.confirmed.value - (result.recovered.value - result.deaths.value);
 
                     $('#country-result').append(`          
-                        <span class="image c">Confirmed : <br><p>` + result.confirmed.value + `</p></span>                    
-                        <span class="image t">Treated : <br><p>` + treated + `</p></span>
-                        <span class="image r">Recovered : <br><p>` + result.recovered.value + `</p></span>
-                        <span class="image d">Death : <br><p>` + result.deaths.value + `</p></span>
+                        <span class="image c">Confirmed : <br><p>${result.confirmed.value}</p></span>                    
+                        <span class="image t">Treated : <br><p>${treated}</p></span>
+                        <span class="image r">Recovered : <br><p>${result.recovered.value}</p></span>
+                        <span class="image d">Death : <br><p>${result.deaths.value}</p></span>
                     `);
 
                     $('#last-update-country').append(`
-                        <h6>Last Update : ` + result.lastUpdate + `</h6>
+                        <h6>Last Update : ${result.lastUpdate}</h6>
                     `);
                 }
             });
